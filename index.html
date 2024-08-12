@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Alert</title>
+</head>
+<body>
+    <script>
+        var age = 25; 
+        alert("Your age is: " + age);
+    </script>
+      <h1>Welcome to Our Website</h1>
+      <p id="visit-count"></p>
+  
+      <script>
+          if (localStorage.getItem('visitCount')) {
+              
+              var visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
+          } else {
+              var visitCount = 1;
+          }
+  
+          localStorage.setItem('visitCount', visitCount);
+  
+          document.getElementById('visit-count').innerText = "You have visited this site " + visitCount + " times.";
+      </script>
+         <script>
+            var birthYear = 2004; 
+            document.write("My birth year is " + birthYear + ".");
+        </script>
+         <script>
+           
+            var visitorName = "John Doe"; 
+            var productTitle = "T-shirt"; 
+            var quantity = 5; 
+            document.write(visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store.");
+        </script>
+</body>
+</html>
